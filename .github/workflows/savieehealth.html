@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="saviee.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<style>
+		.box {
+			background-color: blue;
+			width: 900px;
+			height: 350px;
+			margin: auto;
+			margin-top: 20px;
+			box-shadow: 0px 0px 15px blue;
+			font-family: Raleway;
+		}
+		.head {
+			margin-right: 40px;
+			display: inline-block;
+			padding-bottom: 20px;
+			float: right;
+		}
+		#header {
+			color: blue;
+			font-size: 30px;
+			display: inline-block;
+			font-family: Raleway;
+			padding: 0px;
+			margin: 0px;
+			font-weight: bolder;
+		}
+		.header {
+			display: inline-block;
+			/*	padding-right:150px;*/
+		}
+		#go1, #go2, #go3, #go4, #go5, #go6, #go7 {
+			text-shadow: 5px 5px 5px grey;
+			font-weight: lighter;
+		}
+		#go {}
+		#search {
+			border-radius: 10px;
+			width: 300px;
+			height: 35px;
+			border-style: solid;
+			border-width: .2px;
+			border-color: black;
+			box-shadow: 0px 0px 2px blue, 0px 0px 2px blue;
+			outline: none;
+			font-size: 20px;
+		}
+		#searchbtn {
+			border-radius: 10px;
+			width: 60px;
+			height: 35px;
+			font-family: Raleway;
+			border-style: solid;
+			text-align: center;
+			border-width: .2px;
+			background-color: #0000ff;
+			border-color: #0000ff;
+			color: white;
+			box-shadow: inset 2px 2px 5px #0000aa,inset -2px -2px 5px #0000aa;
+			outline: none;
+			font-size: 15px;
+		}
+		.p {
+			text-align: center;
+			display: inline-block;
+			color: white;
+			text-shadow: 2px 2px 8px black;
+		}
+		#pOne {
+			padding-left: 10px;
+			padding-top: 70px;
+			padding-right: 80px;
+		}
+		#pTwo {
+			padding-left: 80px;
+			padding-right: 70px;
+		}
+		#pThree {
+			padding-right: 10px;
+			padding-left: 70px;
+		}
+		#pFour {
+			color: white;
+			font-family: Raleway, san-serif;
+			text-align: center;
+			display: block;
+		}
+		#pFive {
+			color: white;
+			text-align: center;
+			display: block;
+		}
+		.span {
+			text-shadow: 2px 2px 8px black;
+			font-size: 14px;
+			font-family: Raleway,sans-serif;
+			/*	padding-right: 40px;
+	padding-left: 40px;*/
+			width: 190px;
+			text-align: center;
+			display: inline-block;
+			color: white;
+			font-weight: light;
+		}
+		img {
+			width: 90px;
+			height: 100px;
+			/*padding-right: 100px;*/
+		}
+		/*	#imgTwo {
+	height: 100px;
+	padding-left: 80px;
+	padding-right: 50px;
+	width: 80px;
+}
+	#imgThree {
+	width: 140px;
+	height: 110px;
+	padding-right: 40px;
+	padding-left: 100px;
+}
+	#imgOne {
+	padding-left: 70px;
+}*/
+@media(max-width: 920px) {
+			.box {
+				width: 100%;
+				height: 100%;
+				margin-top: 20px;
+			}
+			#pOne {
+				padding-left: 10px;
+				padding-top: 50px;
+				padding-right: 60px;
+			}
+			#pTwo {
+				padding-left: 60px;
+				padding-right: 60px;
+			}
+			#pThree {
+				padding-right: 10px;
+				padding-left: 50px;
+			}
+			.head {
+				margin-right: 10px;
+				display: inline-block;
+				float: right;
+			}
+			.header {
+				display: inline-block;
+				/*	padding-right:150px;*/
+			}
+		}
+@media(max-width: 768px) {
+			.box {
+				width: 100%;
+				height: 100%;
+				margin: 0px;
+			}
+			.p {
+				text-align: center;
+				display: block;
+			}
+			span {
+				font-weight: bolder;
+			}
+			#pOne {
+				padding-left: 0px;
+				padding-right: 0px;
+				padding-top: 20px;
+				padding-bottom: 10px;
+			}
+			#pTwo {
+				padding-left: 0px;
+				padding-right: 0px;
+				padding-top: 10px;
+				padding-bottom: 20px;
+			}
+			#pThree {
+				padding-left: 0px;
+				padding-right: 0px;
+				padding-top: 20px;
+				padding-bottom: 20px;
+
+			}
+			input {
+				margin: auto;
+			}
+			.head {
+				padding-right: 20px;
+				float: left;
+			}
+			#go {
+				font-weight: lighter;
+			}
+			#header, .header {
+				font-weight: bolder;
+				padding-bottom: 15px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<p id="header">
+			Saviee Health
+		</p>
+	</div>
+	<div class="head">
+		<input id="search" type="search">
+		<input id="searchbtn" value="Search" type="search" disabled>
+	</div>
+	<p id="go" style="font-family:Raleway; font-size:30px; color:blue;">
+		<span id="go1">W</span>
+		<span id="go2">E</span>
+		<span id="go3">L</span>
+		<span id="go4">C</span>
+		<span id="go5">O</span>
+		<span id="go6">M</span>
+		<span id="go7">E</span>
+		<p style="color:white; font-size:10px;">
+			.
+		</p>
+	</p>
+
+	<div class="box">
+		<p class="p" id="pOne">
+			<img class="img" id="imgOne" src="washyourhand.png" alt="Wash Hands">
+		</br></br>
+	<span class="span">
+		Always wash your hands with soap and running water for at least 20 seconds
+	</span>
+</p>
+
+<p class="p" id="pTwo">
+	<img class="img" id="imgTwo" src="facemask.png" alt="Wash Hands">
+</br></br>
+<span class="span">
+Always wear a nosemask or facemask especially in public places
+</span>
+</p>
+<p class="p" id="pThree">
+<img class="img" id="imgThree" src="socialdistance.png" alt="Wash Hands">
+</br></br>
+<span class="span">
+Always keep up to one or two meters from the next person
+</span>
+</p>
+</br>
+<p id="pFour" class="p">
+Stay Home and Stay Safe!!!
+</p>
+<p class="p" id="pFive">
+Courtsey: Saviour
+</p>
+</br>
+</div>
+<script>
+$(function() {
+$("#go1").hide();
+$("#go2").hide();
+$("#go3").hide();
+$("#go4").hide();
+$("#go5").hide();
+$("#go6").hide();
+$("#go7").hide();
+function go1() {
+$("#go1").show(2000);
+$("#go1").fadeToggle(30000);
+}
+setInterval(go1, 500)
+
+function go2() {
+$("#go2").show(2000);
+$("#go2").fadeToggle(30000);
+}
+setInterval(go2, 1500)
+
+function go3() {
+$("#go3").show(2000);
+$("#go3").fadeToggle(30000);
+}
+setInterval(go3, 2500)
+
+function go4() {
+$("#go4").show(2000);
+$("#go4").fadeToggle(30000);
+}
+setInterval(go4, 3500)
+
+function go5() {
+$("#go5").show(2000);
+$("#go5").fadeToggle(30000);
+}
+setInterval(go5, 4500)
+
+function go6() {
+$("#go6").show(2000);
+$("#go6").fadeToggle(30000);
+}
+setInterval(go6, 5500)
+
+function go7() {
+$("#go7").show(2000);
+$("#go7").fadeToggle(30000);
+}
+setInterval(go7, 6500)
+});
+</script>
+</body>
+</html>
